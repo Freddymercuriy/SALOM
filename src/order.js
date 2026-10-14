@@ -9,7 +9,7 @@ function receipt(name, prices) {
 module.exports.receipt = receipt;
 
 
-function receipt(name prices) {
+function receipt(name, prices) {
   var total = totalPrice(prices);
   if (prices.length == 0) {
     return name + ' ordered nothing';
