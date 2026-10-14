@@ -1,16 +1,11 @@
+const total = totalPrice(prices);
 function receipt(name, prices) {
-  const total = totalPrice(prices);
-  if (prices.length == 0) {
-    return name + ' ordered nothing';
-  }
-  const note = 'thank you';
-  return name + ' pays ' + total;
+  return name + ' ordered nothing';
 }
 module.exports.receipt = receipt;
 
-
 function receipt(name, prices) {
-  var total = totalPrice(prices);
+  const total = totalPrice(prices);
   if (prices.length === 0) {
     return name + ' ordered nothing';
   }
